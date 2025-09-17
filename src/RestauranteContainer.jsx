@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import RestauranteCard from './RestauranteCard';
-import mokeData from "./utility/mokeData"
 import axios from "axios"
 import { IoIosSearch } from "react-icons/io";
 import ShimmerEffect from './utility/ShimmerEffect';
@@ -11,7 +10,7 @@ import useOnlineStatus from './utility/useOnlineStatus';    //------------------
 
 
 const RestauranteContainer = () => {
-    // console.log(mokeData);
+
     const [listOfRestaurent, setListOfRestaurent] = useState([]);
     const [searchInp, setSearchInp] = useState([]);
     const [filteredRestList, setfilteredRestList] = useState([])
